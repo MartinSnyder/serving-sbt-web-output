@@ -24,3 +24,4 @@ lazy val example_webapp =
     ))
     .enablePlugins(SbtWeb)
     .settings(jetty(): _*)
+    .settings(webappSrc in webapp <<= WebKeys.assets in Assets)
